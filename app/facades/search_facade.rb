@@ -11,12 +11,6 @@ class SearchFacade
     end
   end
 
-  def senators
-    json = service.senators_by_state(@state)
-
-    # create senator objects
-  end
-
   def members_count
     all_members.count
   end
