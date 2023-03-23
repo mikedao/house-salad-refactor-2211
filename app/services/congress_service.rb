@@ -1,6 +1,6 @@
 class CongressService
   def members_by_state(state)
-    get_url("/congress/v1/members/house/#{@state}/current.json")
+    get_url("/congress/v1/members/house/#{state}/current.json")
   end
 
   def get_url(url)

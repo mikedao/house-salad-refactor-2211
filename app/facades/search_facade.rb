@@ -6,6 +6,7 @@ class SearchFacade
   def members
     json = service.members_by_state(@state)
 
+    binding.pry
     json[:results].map do |member_data|
       Member.new(member_data)
     end
