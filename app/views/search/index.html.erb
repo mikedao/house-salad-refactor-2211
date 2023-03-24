@@ -7,3 +7,24 @@
     <li class="district"><%= member.district %></li>
   </ul>
 <% end %>
+
+<b>Democrats</b>
+<% @facade.democrats.each do |member| %>
+  <ul class="member">
+    <li class="name"><%= member.name %></li>
+    <li class="role"><%= member.role %></li>
+    <li class="party"><%= member.party %></li>
+    <li class="district"><%= member.district %></li>
+  </ul>
+<% end %>
+
+
+<b>Republicans</b>
+<% @facade.democrats.each do |member| %>
+  <ul class="member">
+    <li class="name"><%= member.name %></li>
+    <li class="role"><%= member.role %></li>
+    <li class="party"><%= member.party %></li>
+    <li class="district"><%= member.district %></li>
+  </ul>
+<% end %>
